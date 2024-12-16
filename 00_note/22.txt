@@ -1,0 +1,69 @@
+Git 자료 정리
+작품을 서버 확인
+
+포토샵 PART-IV
+
+전경색: alt+Del
+배경색: ctrl+Del
+
+컬러피커
+RGB
+#000000 ~ FFFFFF
+only web colors 체크하고 사용한다.
+
+패인트통
+  - 전경색으로 칠 된다.
+  - 닫힌 영역에 칠 된다.
+
+Edit > Fill
+  - Content-aware
+  - Pattern -> script
+
+content-aware Fill
+
+그라디언트 도구
+
+패턴 - 반복무늬
+1. 패턴 정의
+  - Edit > Define Pattern
+2. 패턴 적용
+  - Layer Style > Pattern Overlay
+  - Pattern Stamp 도구
+  - Edit > Fill: Pattern
+
+Pattern Preview
+  - 미리보기 하면서 수정한다.
+
+색 보정
+  - Adjustments 메뉴
+  - Adjustments 패널
+  - Layers 패널에 Adjustments 버튼
+
+색상 보정
+Auto Color
+
+밝기/대비 -> 명도
+Brightness/Contrast
+Level, ctrl+L
+Curves, ctrl+M
+
+채도
+Vibrance
+
+색상/채도
+Hue/Saturation, ctrl+U
+Color/Balance
+
+흑백 이미지 -> 그레이스케일
+Black & White
+Desaturate
+
+close All, ctrl+alt+W
+
+* 영역이 왜곡된다.
+선택 영역 -> 패스
+패스 -> 선택 영역
+
+
+패스를 따라가는 글자 만들기
+예시>

@@ -1,0 +1,26 @@
+Git 자료 정리
+작품을 서버 확인
+
+포토샵 PART-IV
+
+패턴 - 반복무늬
+1. 패턴 정의
+  - Edit > Define Pattern
+2. 패턴 적용
+  - Layer Style > Pattern Overlay
+  - Pattern Stamp 도구
+  - Edit > Fill: Pattern
+
+색상 보정
+Auto Color
+
+밝기/대비
+Brightness/Contrast
+Level, ctrl+L
+Curves, ctrl+M
+
+채도
+Vibrance
+
+
+close All, ctrl+alt+W

@@ -1,0 +1,48 @@
+1. 포토샵 설치하기
+2. 실무에서 5대 웹 브라우저 테스트
+  - 크롬
+  - 엣지(인터넷 익스플로러: IE)
+  - 파이어 폭스
+  - 사파리
+  - 오페라
+2. 깃허브 가입하기
+3. 레파지토리(파일/폴더 저장 공간) 만들기
+
+4. 깃허브 데스크탑
+web1028레파지토리 -> web1028폴더: pull
+web1028레파지토리 <- web1028폴더: push <- commit(승인)
+
+* 웹 브라우저 새로고침: F5 -> ctrl+F5
+
+5. 무료 이미지 사이트: unsplash
+6. 이미지 캡처하기
+  - 윈도우 자체 이미지 캡처: 윈+shift+s
+  - 알캡처: ctrl+shift+s
+7. 파일 업로드하기
+8. 개인 사이트 설정하기
+
+
+윈+e
+￦￦192.168.2.20￦오후공유
+
+프로그램 다운로드: https://m.blog.naver.com/dltlsdnr00/222241729415
+설치과정: https://0seop.tistory.com/54
+
+압축 프로그램
+- 알집(기업 유료), 반디집
+반디집 다운로드: https://kr.bandisoft.com/bandizip/
+
+윈도우10 -> 윈도우11
+https://wotdud608.tistory.com/47
+
+포토샵이 설치된 경로(path)
+C:\Program Files\Adobe\Adobe Photoshop CS6 (64 Bit)
+
+알캡처
+https://altools.co.kr/product/ALCAPTURE
+
+모두 선택: ctrl+a
+복사 하기: ctrl+c
+잘라 내기: ctrl+x
+붙여 넣기: crrl+v
+취소: ctrl+z

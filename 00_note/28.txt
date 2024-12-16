@@ -1,0 +1,80 @@
+Q> 포토샵이 갑자기 켜지지 않을때?
+A> 윈도우 작업관리자(ctrl+alt+del)을 열어 백그라운드에서 실행되고 있는 포토샵 프로그램을 강제 종료 후 다시 실행한다.
+
+
+Content-Aware(내용 인식)
+1. Edit>Fill, shift+F5
+  - Content-Aware
+  - Pattern Script
+2. Edit>Content-Aware Fill
+3. Edit>Content-Aware Scale
+  - 보호할 영역을 선택하여 Select>Save Selection
+4. Content-Aware Move(내용 인식 이동) 도구
+5. Fetch 도구
+6. Spot healing 도구
+7. Healing Brush vs Clone Stamp 도구
+
+
+PART 7
+
+* 레이어(Layers, 층)
+Opacity(투명도): 0 ~ 100%(기본값)
+
+* 레이어 종류
+- Background(배경) 레이어
+-> 잠겨 있어서 색만 지정할 수 있다.
+- 문자(T) 레이어
+- 일반 레이어
+- 스마트 오브젝트 레이어
+-> 외부 이미지(jpg, png)을 place로 불러왔을 경우
+
+레이어 패널
+레이어 선택
+- 하나의 레이어 선택: 클릭
+- 둘 이상의 레이어 선택: shift+클릭, alt+클릭
+레이어 이동
+- 드래그
+- ctrl+[,] 또는 ctrl+shift+[,]
+레이어 숨기기/보이기
+- 선택한 레이어만 보이고 나머지는 숨기기
+-> 해당 레이어의 눈을 alt+클릭
+레이어 복제
+- Layer via Copy: ctrl+j
+참고: Layer via cut: ctrl+shift+j (잘라내기)
+- ctrl+c -> ctrl+v
+- alt+드래그
+- Create a new layer 버튼으로 드래그
+레이어 삭제
+- delete
+- Delete layer 버튼으로 드래그
+레이어 이름 바꾸기
+레이어 연결(Link Layers)
+레이어 병합
+- 둘 이상의 레이어를 하나로 합치기
+- Merge Layers, ctrl+E
+- Merge Visible, ctrl+shift+E
+- Flatten Image
+- 하나의 레이어(단, 비트맵 레이어)를 선택했을 때 아래의 레이어와 병합 
+- Merge Down
+-> 결론: 병합하고 싶은 레이어를 선택 후 ctrl+E
+-> 하나더: 복제 병합하려면 ctrl+shift+alt+E
+
+레이어 그룹(Group)
+- 그룹: ctrl+g
+- 그룹 해제: ctrl+shift+g
+
+레이어 잠금/풀기
+- 투명영역 -> 기억!!!!
+- 색
+- 이동
+- 아트보드
+- 모두
+
+
+이동 도구
+auto-select가 해제 -> ctrl+개체 선택
+
+블레딩 모드(Blending Mode) -> 합성 방식
+- 상위 레이어 이미지와 하위 레이어 이미지의 색을 합성한다.
+- 블렌딩 종류는 상위 레이어에 지정해야 한다.
+-> Multiply는 흰색 이미지를 투명하게 처리한다.

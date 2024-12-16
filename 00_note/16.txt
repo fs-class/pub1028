@@ -1,0 +1,51 @@
+## 포토샵
+### 선택도구
+Marquee(선택) 4개 도구
+  사각형, 원형, 1px 라인
+Lasso(올가미) 도구
+  임의의 영역
+Polygonal Lasso(다각형 올가미)
+  삼각형, 사각형(마름모), ...
+Object Selection(객체 선택) 도구
+  객체? 이미지의 배경이 아닌 인물, 물체, ...
+Quick Selection(빠른 선택) 도구
+  임의의 영역
+Magic Wand(마술봉) 도구
+  비슷한 색 선택
+  옵션: 허용치, 인접한
+
+### select(선택) 메뉴
+전체 선택: ctrl+a
+선택 해제: ctrl+d -> 가장 효과적이다!!!
+선택 inverse(반전): ctrl+shift+i
+
+### 선택 옵션
+선택 모드
+New Selection -> 처음
+Add to Selection -> 추가, shift
+Subtract from Selection -> 제외, alt
+Intersect with Selection -> 교차, alt+shift
+
+feather(페더) -> 가장자리 부드럽게
+Anti-Aliasing(안티 앨리어싱) -> 계단현상 제거
+  계단현상은 곡선에서만 나타난다.
+
+style(스타일)
+  Normal -> 임의 크기
+  Fixed Ratio(고정 비율)
+  Fixed Size(고정 크기)
+
+### Edit(편집) 메뉴
+Stroke -> 선 굵기, 색
+Paste Into 
+  -> 포토샵의 마스크 기법 중 하나
+  -> 안경 예제
+
+### 파일 메뉴
+Action(액션) 패널
+Automate(자동화)
+  Batch 또는 Create Droplet
+  PDF Presentation -> 여러 장의 이미지를 하나의 pdf로 만들기
+
+## 피그마
+pdf 파일 저장하기
