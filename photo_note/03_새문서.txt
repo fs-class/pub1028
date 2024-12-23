@@ -1,0 +1,26 @@
+새 문서
+File > New, ctrl+N
+
+단위: px(픽셀)
+Width(가로 크기)
+Height(세로 크기)
+Resolution(해상도): 72ppi
+Color Mode(컬러모드): RGB, 8bit
+Background Contents: White -> 캔버스의 색이 흰색
+
+GTQ 포토샵
+1,2문제: 400*500
+3,4문제: 600*400
+
+Q: 작업 중간에 캔버스 크기를 바꾸는 방법은?
+A: Canvas Size -> ctrl+alt+c
+또는 Crop 도구
+
+Q: 작업 중간에 해상도로 변경하려면?
+A: Image Size -> ctrl+alt+i
+
+Q: 작업 중간에 컬러모드는 변경 방법은?
+A: Image 메뉴의 Mode
+
+Q: 작업 중간에 캔버스의 배경색을 투명으로 변경하려면?
+A: 새 레이어를 추가한 뒤에 Background 레이어의 눈을 끈다.

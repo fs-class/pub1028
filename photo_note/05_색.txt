@@ -1,0 +1,1 @@
+컬러 피커(color picker) 대화상자

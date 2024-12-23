@@ -1,0 +1,21 @@
+저장하기
+
+File 메뉴
+Save, ctrl+s -> psd(원본), jpg, png, gif
+Save As: 다른 이름으로 저장
+
+Exports As, ctrl+alt+shift+w -> jpg, png, gif, svg
+Save for web, ctrl+alt+shift+s -> jpg, png, gif
+
+
+벡터 vs 비트맵
+프로그램
+- 피그마는 벡터
+- 포토샵은 비트맵
+
+파일
+- 비트맵: jpg, png, gif
+- 벡터: svg
+
+참고로 사진은 jpg 또는 png로 저장한다.
+투명 배경의 사진은 png로 저장한다.

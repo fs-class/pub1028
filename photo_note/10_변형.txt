@@ -1,0 +1,8 @@
+Edit 메뉴
+
+Free Transform 자유 변형 -> ctrl+T
+Transform 변형
+- Scale(크기 조절)
+- Rotate(회전)
+- Skew(기울기)
+- Flip(대칭): Horizontal(수평, 좌우), Vertical(수직, 상하)

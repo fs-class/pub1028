@@ -1,0 +1,10 @@
+File 메뉴
+new 새문서: ctrl+N
+save 저장: ctrl+s
+close all 모두 닫기: ctrl+alt+w
+
+Edit 메뉴
+
+copy 복사: ctrl+c
+paste 붙어넣기: ctrl+v
+cut 잘라내기: ctrl+x

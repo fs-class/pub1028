@@ -1,0 +1,12 @@
+환경 설정 파일을 초기화
+ctrl+shift+alt+포토샵아이콘
+
+작업 공간 초기화
+Workspace Reset
+
+옵션바 초기화
+
+패널 초기화
+- Character(문자), Paragraph(문단)
+
+도구의 전경색/배경색 초기화

@@ -1,0 +1,45 @@
+선택
+
+Select 선택 메뉴
+All 전체, ctrl+A
+Deselect 선택 해제, ctrl+D
+Inverse 반대 선택, ctrl+shift+i
+
+
+연속: shift
+비연속: ctrl
+
+
+선택 도구
+
+
+마퀴 4개
+라소 3개
+
+
+* 빠르다. 대충 선택한다.
+Object Selection(개체 선택) 도구
+-> 사각형 영역안의 개체를 자동 선택
+Quick Selection(빠른 선택) 도구
+-> 크기: [, ]
+-> Caps Lock 꺼진 상태에서 원의 크기 확인가능
+
+Magic Wand(마술봉) 도구
+-> 주의! 선택 도구 사용 시
+선택하고자 하는 이미지가 있는 레이어를 선택 후 사용
+-> 이유는 이미지의 색 차이를 통해 선택하기 때문이다.
+
+
+* 정확한 선택 가능, 시간이 많이 소요된다.
+Pen 펜 도구
+Quick Mask Mode + Brush 도구
+
+
+패널
+- 패스, 알파 채널
+
+
+선택한 영역 복제
+Layer via Copy, ctrl+j
+또는
+ctrl+c -> ctrl+v
