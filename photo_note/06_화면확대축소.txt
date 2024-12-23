@@ -1,0 +1,12 @@
+View 메뉴
+
+Zoom in 화면 확대 ctrl++
+Zoom out 화면 축소 ctrl+-
+Fit on Screen 창 크기에 맞게 ctrl+0
+100% -> 100% 화면 ctrl+1
+
+Zoom 돋보기 도구
+Hand 손바닥 도구
+-> 화면 이동 spacebar+드래그
+
+Navigator 내비게이터 패널

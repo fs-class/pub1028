@@ -1,8 +1,15 @@
 Edit 메뉴
 
 Free Transform 자유 변형 -> ctrl+T
+바운딩 박스(Bounding Box)
+-> 크기 조절, 회전, 
+-> 기울기, 왜곡(Distort, Perspective) -> ctrl+조절점
+
 Transform 변형
-- Scale(크기 조절)
+- Scale(크기 조절) -> 가로/세로 비율 유지
 - Rotate(회전)
 - Skew(기울기)
 - Flip(대칭): Horizontal(수평, 좌우), Vertical(수직, 상하)
+
+
+변형 완료: enter

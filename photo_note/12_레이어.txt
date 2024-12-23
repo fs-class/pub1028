@@ -25,3 +25,21 @@ Load Selection
 
 포토샵 개체(Object)란?
 캔버스 위에서 움직이는 것은 모두 개체이다.
+
+
+Layer Style 레이어 스타일(fx) 10가지
+Glow -> 네온사인, 빛나는 효과
+inner glow 내부 광선
+outer glow 외부 광선
+
+Shadow -> 그림자
+Overlay -> 색 덧칠하기
+-> color, gradent, pattern
+Bevel & Emboss -> 입체 효과
+Stroke -> 선
+Satin -> 선 질감
+
+레이어 스타일 대화상자 열기
+레이어 패널의 하단의 fx 버튼 클릭
+또는
+레이어의 끝을 더블 클릭

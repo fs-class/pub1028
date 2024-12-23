@@ -1,0 +1,10 @@
+Adjustments 조정
+
+Image 메뉴
+Adjustments 메뉴
+
+Adjustments 패널 
+-> Properies 속성 패널에서 값을 조정
+Layers 패널의 Adjustments 버튼
+-> Properies 속성 패널에서 값을 조정
+
