@@ -1,1 +1,41 @@
+색
+
+단일 색상
+Solid color
+
+Edit 메뉴
+Fill -> 면 색 -> shift+F5
+Stroke -> 선 색
+
+Foreground color 전경색 -> alt+Del
+Background color 배경색 -> ctrl+Del
+
 컬러 피커(color picker) 대화상자
+RGB Red 0~255 Green 0~255 Blue 0~255 -> 24bit True Color
+CMYK Cyan 0~100% Magenta 0~100% Yellow 0~100% blacK 0~100% 
+Lab
+H 0~360 S 0~100% B 0~100%, Hue Saturation Brightness 색상 채도 명도
+
+#RRGGBB -> 16진수(0~9, A~F)
+#006666 -> #066
+
+그라디언트
+Gradient
+
+그라데이션(gradation 그러데이션)이란 어떤 색조, 명암, 질감을 단계적으로 다른 색조, 명암, 질감으로 바꾸는 예술 기법을 의미한다. 그라데이션을 통해 공간, 거리, 분위기, 부피, 곡선/곡면 등을 표현할 수 있다.
+
+
+패턴(반복 무늬)
+Pattern
+
+Eyedropper 스포이드 도구 
+-> 기본은 전경색으로 색 추출
+-> Alt 누를 상태에서 추출하면 배경색으로 추출된다.
+
+Paint Bucket 패인통 도구 
+-> 단일 색 칠
+-> 기본색은 전경색이다.
+-> 닫힌 영역에 칠할 경우
+
+Gradient 도구 -> 그라디언트 색 칠
+

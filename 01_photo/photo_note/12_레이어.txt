@@ -1,4 +1,4 @@
-Layer 레이어
+Layer 레이어(층)
 
 Layers 패널
 
@@ -43,3 +43,52 @@ Satin -> 선 질감
 레이어 패널의 하단의 fx 버튼 클릭
 또는
 레이어의 끝을 더블 클릭
+
+
+Blending Mode 합성 방식
+-> 상위 레이어와 하위 레이어의 색을 합성한다.
+-> 상위 레이어에 지정한다.
+
+Normal
+-> 기본값으로 Blending Mode를 사용하지 않은 경우
+
+Dissolve 
+-> 노이즈 효과
+-> 단, opaicty가 100% 미만
+
+어둡게 합성, 흰색은 제거
+Darken
+Multiply 곱하다
+Color Burn
+Linear Burn 불타다
+Darker Color
+
+밝게 합성, 검은색은 제거
+Lighten
+Screen
+Color Dodge
+Linear Dodge (Add)
+Lighter Color
+
+Overlay
+Soft Light
+Hard Light
+Vivid Light 생생한
+Pin Light
+Hard Mix
+
+Difference 차이
+Exclusion 제외
+Subtract 빼기
+Divide 나누기
+
+Hue
+Saturation
+Color
+Luminosity 밝기
+
+불투명도: 0(투명) ~ 100(불투명)%
+Opaicty
+-> 개체의 색과 레이어 스타일로 지정한 색상 모두 적용된다.
+Fill
+-> 개체의 색에만 적용된다.

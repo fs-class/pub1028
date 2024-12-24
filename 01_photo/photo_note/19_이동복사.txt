@@ -1,0 +1,22 @@
+개체 이동/복제
+
+Edit 메뉴
+Layer 메뉴
+
+같은 위치에 이동/복제
+Layer 복제
+Layer via copy, ctrl+j
+ctrl+c -> ctrl+v
+Layer 잘라내기
+Layer via cut, ctrl+shift+j
+ctrl+x -> ctrl+v
+
+다른 위치에 이동/복제
+Move 이동 도구 선택 후
+이동: 드래그
+복제: alt+드래그
+
+
+Image 메뉴
+파일 복제
+Duplicate
