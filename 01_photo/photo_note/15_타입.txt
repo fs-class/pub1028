@@ -1,6 +1,15 @@
 텍스트
 
-Type 도구
 
-가로
-세로
+가로 문자 도구
+Horizontal Type 도구
+Horizontal Type Mask 도구
+
+
+세로 문자 도구
+Vertical Type 도구
+Vertical Type Mask 도구
+
+
+문자 Character 패널
+문단 Paragraph 패널
