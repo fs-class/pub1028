@@ -25,8 +25,12 @@ body {
 header {height: 100px;}
 /* 로고 */
 /* 내비게이션 */
+.sub {display: none;}
 /* 슬라이드 */
 .slide {height: 300px;}
+/* 요소1:not(요소2) -> 요소2을 제외 */
+/* .slide 클래스 안에 있는 li 중에서 첫 번째(:first-of-type) 요소를 제외한 요소 */
+.slide li:not(:first-of-type) {display: none;}
 /* 콘텐츠 */
 .contents {height: 200px;}
 /* 공지사항/갤러리 */
