@@ -1,40 +1,138 @@
 @charset "utf-8";
 
 /* 공통 */
+* {
+  box-sizing: border-box;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+h1,
+p {
+	margin: 0;
+}
+img {
+	width: 100%;
+	vertical-align: top;
+}
 /* 글꼴 */
 /* 한글: 굴림,돋움,바탕,.. */
 /* 영문: Arial, Times,.. */
 /* 작품: Noto Sans, ... */
 body {
-  font: 15px Arial, 돋움, sans-serif;
+	font: 15px/1.6 Arial, 돋움, sans-serif;
 	background: #ffffff;
 	color: #333333;
+	margin: 0;
 }
-
-/* 현재 작업중.... */
-.wrap * {outline: 1px dotted lime;}
+a {
+  color: #333333;
+  text-decoration: none;
+}
 
 .wrap {
-  width: 1200px;
-  /* margin: 상하 좌우 */
-  /* auto란? width를 제외한 남은 공간을 1/2로 좌우를 동일하게 준다. */
-  margin: 0 auto;
+	width: 1200px;
+	/* margin: 상하 좌우 */
+	/* auto란? width를 제외한 남은 공간을 1/2로 좌우를 동일하게 준다. */
+	margin: 0 auto;
 }
 
-/* 헤더 */
-header {height: 100px;}
+/* 헤더: 로고+내비게이션 */
+header {
+  position: relative;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+  padding-top: 30px;
+}
+
 /* 로고 */
+.logo {
+	width: 200px;
+	height: 40px;
+}
+
 /* 내비게이션 */
-.sub {display: none;}
+/* 지금은 공사중... */
+/* .main * {
+	outline: 1px solid red;
+} */
+
+.main {
+	display: flex;
+}
+.main li {
+	width: 160px;
+	text-align: center;
+  cursor: pointer;
+}
+.main a {
+  font-size: 18px;
+}
+.main>li:hover>a {
+  font-weight: bold;
+  color: darkblue;
+}
+.main>li:hover .sub {
+  height: 150px;
+  visibility: visible;
+  opacity:1;
+}
+.sub {
+	/* display: none; */
+  background: rgba(0, 132, 255, 0.5);
+  height: 0px;
+  overflow:hidden;
+  transition: .3s;
+  line-height: 2;
+  visibility: hidden;
+  opacity:0;
+  padding-top: 16px;
+  border-radius: 30px 30px 30px 30px;
+}
+.sub a {
+  font-size: 14px;
+}
+.sub li:hover {
+  background: darkblue;
+}
+.sub li:hover a {
+  color: #fff;
+}
 /* 슬라이드 */
-.slide {height: 300px;}
+.slide {
+	height: 300px;
+}
 /* 요소1:not(요소2) -> 요소2을 제외 */
 /* .slide 클래스 안에 있는 li 중에서 첫 번째(:first-of-type) 요소를 제외한 요소 */
-.slide li:not(:first-of-type) {display: none;}
+.slide li:not(:first-of-type) {
+	display: none;
+}
 /* 콘텐츠 */
-.contents {height: 200px;}
+.contents {
+	height: 200px;
+	display: flex;
+	justify-content: space-between;
+}
+.contents > div {
+	/* width: 400px; */
+	flex-basis: 400px;
+}
 /* 공지사항/갤러리 */
+#tab2 {
+	display: none;
+}
 /* 배너 */
 /* 바로가기 */
+
 /* 푸터 */
-footer {height: 100px;}
+footer {
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #999;
+}
