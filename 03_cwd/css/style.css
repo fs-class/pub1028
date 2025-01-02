@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* 공통 */
+/* 글꼴 */
+/* 한글: 굴림,돋움,바탕,.. */
+/* 영문: Arial, Times,.. */
+/* 작품: Noto Sans, ... */
+body {
+  font: 15px Arial, 돋움, sans-serif;
+	background: #ffffff;
+	color: #333333;
+}
+
+/* 현재 작업중.... */
+.wrap * {outline: 1px dotted lime;}
+
+.wrap {
+  width: 1200px;
+  /* margin: 상하 좌우 */
+  /* auto란? width를 제외한 남은 공간을 1/2로 좌우를 동일하게 준다. */
+  margin: 0 auto;
+}
+
+/* 헤더 */
+header {height: 100px;}
+/* 로고 */
+/* 내비게이션 */
+/* 슬라이드 */
+.slide {height: 300px;}
+/* 콘텐츠 */
+.contents {height: 200px;}
+/* 공지사항/갤러리 */
+/* 배너 */
+/* 바로가기 */
+/* 푸터 */
+footer {height: 100px;}
