@@ -1,6 +1,9 @@
 @charset "utf-8";
 
 /* 공통 */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
+
 * {
   box-sizing: border-box;
 }
@@ -17,12 +20,9 @@ img {
 	width: 100%;
 	vertical-align: top;
 }
-/* 글꼴 */
-/* 한글: 굴림,돋움,바탕,.. */
-/* 영문: Arial, Times,.. */
-/* 작품: Noto Sans, ... */
+/* 기본 글꼴 */
 body {
-	font: 15px/1.6 Arial, 돋움, sans-serif;
+	font: 15px/1.6 NanumSquare, Arial, 돋움, sans-serif;
 	background: #ffffff;
 	color: #333333;
 	margin: 0;
@@ -34,19 +34,21 @@ a {
 
 .wrap {
 	width: 1200px;
-	/* margin: 상하 좌우 */
-	/* auto란? width를 제외한 남은 공간을 1/2로 좌우를 동일하게 준다. */
 	margin: 0 auto;
 }
 
 /* 헤더: 로고+내비게이션 */
 header {
   position: relative;
+	z-index:1;
 	height: 100px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-  padding-top: 30px;
+  padding: 38px 30px;
+
+	/* 유형2 */
+	background: #002C5F;
 }
 
 /* 로고 */
@@ -56,11 +58,6 @@ header {
 }
 
 /* 내비게이션 */
-/* 지금은 공사중... */
-/* .main * {
-	outline: 1px solid red;
-} */
-
 .main {
 	display: flex;
 }
@@ -69,21 +66,43 @@ header {
 	text-align: center;
   cursor: pointer;
 }
-.main a {
+.main>li>a {
   font-size: 18px;
 	font-weight: 700;
+	color: #fff;
+	position: relative;
 }
 .main>li:hover>a {
   color: #333;
+	/* 유형2 */
+	color: #abb8c7;
 }
-.main>li:hover .sub {
-  height: 150px;
+
+/* 메인 a에 호버시 하단바 */
+.main>li>a::after {
+	content: "";
+	position: absolute;
+	left:0;
+	bottom:-8px;
+	width:100%;
+	height: 2px;
+	background: #abb8c7;
+	transform: scale(0);
+	transition: .3s ease-in-out;
+}
+.main>li>a:hover::after {
+	transform: scale(1);
+}
+
+/* 유형1 */
+/* .main>li:hover .sub { */
+/* 유형2 */
+.main:hover .sub {
+  height: 220px;
   visibility: visible;
   opacity:1;
 }
 .sub {
-	/* display: none; */
-  background: rgba(255, 255, 255, 0.5);
   height: 0px;
   overflow:hidden;
   transition: .3s;
@@ -91,45 +110,151 @@ header {
   visibility: hidden;
   opacity:0;
   padding-top: 16px;
-	margin-top: 8px;
+	margin-top: 33px;
+
+	background: rgba(255, 255, 255, 0.5);
   border-radius: 0px 20px 20px 20px;
 	border: 1px solid #d4d4d4;
+	
+	/* 유형2 */
+	background: #fff;
+	border-radius: 0;
+	border: none;
+
 }
 .sub a {
   font-size: 14px;
 	font-weight: 300;
+
+	/* 유형2 */
+	color: #333;
 }
 .sub li:hover {
   background: #002C5F;
+
+	/* 유형2 */
+	background: transparent;
 }
 .sub li:hover a {
   color: #fff;
+
+	/* 유형 */
+	color: #777;
 }
 /* 슬라이드 */
 .slide {
 	height: 300px;
+	overflow:hidden;
 }
 /* 요소1:not(요소2) -> 요소2을 제외 */
 /* .slide 클래스 안에 있는 li 중에서 첫 번째(:first-of-type) 요소를 제외한 요소 */
-.slide li:not(:first-of-type) {
+/* .slide li:not(:first-of-type) {
 	display: none;
+} */
+
+/* animation */
+.slide ul {
+	position: relative;
+	display: flex;
+	width: 400%;
+	animation: slide 12s infinite;
 }
+@keyframes slide {
+		0% {left: 0%;}
+		10% {left: -100%;}
+		33% {left: -100%;}
+		43% {left: -200%;}
+		66% {left: -200%;}
+		76% {left: -300%;}
+		99.99% {left: -300%;}
+		100% {left: 0%;}
+}
+
+
 /* 콘텐츠 */
 .contents {
 	height: 200px;
 	display: flex;
 	justify-content: space-between;
+	padding: 8px 0;
 }
 .contents > div {
 	/* width: 400px; */
 	flex-basis: 400px;
 }
-/* 공지사항/갤러리 */
-#tab2 {
+
+/* 탭 */
+.tabs {
+	position: relative;
+	width: 400px;
+	/* height: 200px; */
+	padding: 2px;
+}
+.tabs input {
 	display: none;
 }
-/* 배너 */
-/* 바로가기 */
+.tabs label {
+	display: inline-block;
+	padding: 2px 24px;
+	background: #999;
+	color: #777;
+	cursor:pointer;
+}
+.tabs>div {
+	display: none;
+	position: absolute;
+	width: calc(100% - 4px);
+	/* height: calc(100% - 31px); */
+	padding: 16px;
+}
+.tabs input:checked + label {
+	background: #333;
+	color: #fff;
+}
+.tabs input:checked + label + div {
+	display: block;
+}
+
+/* 공지사항 */
+#tab1 a {
+	display: flex;
+	justify-content: space-between;
+	line-height: 2;
+}
+#tab1 li {
+	border-bottom: 1px dotted #ccc;
+	padding: 0 8px;
+}
+#tab1 li:hover {
+	background: #000;
+}
+#tab1 li:hover a {
+	color: #fff;
+}
+
+/* 말줄임... */
+#tab1 li span:first-child {
+	text-overflow:ellipsis;
+	overflow: hidden;
+	text-wrap:nowrap;
+}
+
+/* 갤러리 */
+#tab2 span {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background: #ccc;
+}
+#tab2 a:not(:first-child) {
+	margin-left: 16px;
+}
+
+/* 배너 & 바로가기 */
+.contents img {
+	height: 100%;
+	object-fit: cover;
+}
 
 /* 푸터 */
 footer {
@@ -137,5 +262,109 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: #999;
+	background: #333;
+	color: #555;
+	padding: 30px 150px 30px 0;
+	background: #333 url(./../images/logo_b.svg) no-repeat 120px 30px;
+}
+
+/* 주소 및 저작권 */
+footer .copy {
+	margin-left: 200px;
+}
+
+footer .rc {
+	display: flex;
+	align-items: center;
+}
+
+/* SNS */
+footer .sns {
+	font-size: 24px;
+	margin-right: 32px;
+}
+footer .sns a:not(:first-child) {
+	margin-left: 8px;
+}
+footer .sns i:hover {
+	transform: scale(1.2);
+}
+footer .sns a:nth-child(1) i:hover {
+	color: #3A5696;
+}
+footer .sns a:nth-child(2) i:hover {
+	color: #21A4F5;
+}
+footer .sns a:nth-child(3) i:hover {
+	color: #D24283;
+}
+
+/* 패밀리사이트 */
+footer .fs * {
+	overflow: hidden;
+}
+footer .fs {
+	position: relative;
+}
+footer .fs>a {
+	z-index: 1;
+	position: relative;
+	border: 1px solid #2c1f1f;
+	padding: 8px 16px;
+	background: #333;
+}
+footer .fs:hover ul {
+	top:-90px;
+	opacity:1;
+	visibility: visible;
+	height: 90px;
+}
+footer .fs ul {
+	position: absolute;
+	width: 100%;
+	top:0px;
+	height: 0;
+	opacity:0;
+	/* visibility: hidden; */
+	transition: .3s;
+}
+footer .fs li {
+	background: #fff;
+	padding: 2px 8px;
+	border-bottom: 1px solid #2c1f1f;
+}
+
+/* 삼각형 회전 애니메이션 */
+footer .fs>a i {
+	margin-left: 32px;
+	vertical-align: middle;
+	transition: .3s;
+}
+footer .fs:hover i {
+	transform: rotate(180deg);
+}
+
+
+/* 모달 팝업 */
+#modal {
+	display: none;
+	z-index: 2;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+#modal .popup {
+	width: 600px;
+	margin: 250px auto;
+	padding: 32px;
+	background: #fff;
+}
+#modal button {
+	margin-top: 24px;
+}
+#modal button::before {
+	content: "× ";
 }

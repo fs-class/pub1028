@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>현대자동차</title>
@@ -11,7 +12,7 @@
     <!-- 헤더 -->
     <header>
       <!-- 로고 -->
-      <h1 class="logo"><a href="#"><img src="./images/main_02.png" alt="현대자동차"></a></h1>
+      <h1 class="logo"><a href="#"><img src="./images/logo.svg" alt="현대자동차"></a></h1>
       <!-- 내비게이션 -->
       <nav class="gnb">
         <ul class="main">
@@ -60,22 +61,22 @@
 
     <!--  콘텐츠 -->
     <div class="contents">
-      <!-- 공지사항/갤러리 -->
       <div class="tabs">
-        <!-- 제목버튼 -->
-        <ul class="btn">
-          <li><a href="#tab1">공지사항</a></li>
-          <li><a href="#tab2">갤러리</a></li>
-        </ul>
-        <!-- 내용 -->
+        <!-- 공지사항 -->
+        <input type="radio" name="btn" id="btn1" checked>
+        <label for="btn1">공지사항</label>
         <div id="tab1">
           <ul>
-            <li><a href="#"><span>첫 번째 공지사항 입니다.</span>2025.01.02</a></li>
-            <li><a href="#"><span>두 번째 공지사항 입니다.</span>2025.01.01</a></li>
-            <li><a href="#"><span>세 번째 공지사항 입니다.</span>2024.12.31</a></li>
-            <li><a href="#"><span>네 번째 공지사항 입니다.</span>2024.12.30</a></li>
+            <li><a href="#"><span>블루멤버스 제휴서비스 종료 안내(현대면세점)</span><span>2024.12.31</span></a></li>
+            <li><a href="#"><span>2025년 상반기 현대 상용 디지털 마케팅 운영 부문 대행사 모집</span><span>2024.12.19</span></a></li>
+            <li><a href="#"><span>블루링크 이용약관 별표 개정 공지</span><span>2024.12.17</span></a></li>
+            <li><a href="#"><span>2025년 현대자동차 동호회 릴레이 시승 운영 대행사 모집 공고</span><span>2024.12.06</span></a></li>
           </ul>
         </div><!-- //#tab1 -->
+
+        <!-- 갤러리 -->
+        <input type="radio" name="btn" id="btn2">
+        <label for="btn2">갤러리</label>
         <div id="tab2">
           <a href="#"><span>갤러리1</span></a>
           <a href="#"><span>갤러리2</span></a>
@@ -87,7 +88,7 @@
       <div class="banner">
         <a href="#"><img src="./images/main_09.png" alt="배너"></a>
       </div><!-- //.banner -->
-      
+
       <!-- 바로가기 -->
       <div class="shortcut">
         <a href="#"><img src="./images/main_11.png" alt="바로가기"></a>
@@ -98,20 +99,46 @@
     <!-- 푸터 -->
     <footer>
       <!-- 하단로고 -->
-      <div class="logo"><a href="#"><img src="./images/logo_b.jpg" alt="현대자동차"></a></div>
+      <!-- <div class="logo"><a href="#"><img src="./images/logo_b.svg" alt="현대자동차"></a></div> -->
       <!-- 주소 및 저작권 -->
       <div class="copy">
         <p>서울특별시 서초구 헌릉로 12</p>
         <p>Copyright 현대자동차. All rights reserved.</p>
       </div>
-      <!-- SNS -->
-      <div class="sns">
-        <a href="#">페이스북</a>
-        <a href="#">트위터</a>
-        <a href="#">인스타그램</a>
-      </div>
+
+      <div class="rc">
+        <!-- SNS -->
+        <div class="sns">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <!-- 패밀리 사이트 -->
+        <div class="fs">
+          <a href="#">패밀리사이트<i class="fa-solid fa-caret-down"></i></a>
+          <ul>
+            <li><a href="https://naver.com" target="_blank">네이버</a></li>
+            <li><a href="https://youtube.com" target="_blank">유튜브</a></li>
+            <li><a href="https://nate.com" target="_blank">네이트</a></li>
+          </ul>
+        </div><!-- //.fs -->
+      </div><!-- //.rc -->
     </footer><!-- //footer -->
   </div><!-- //.wrap -->
+
+
+  <!-- 모달 내용 -->
+  <div id="modal">
+    <div class="popup">
+      <h2>안내문</h2>
+      <p>현대자동차 웹 사이트 리뉴얼 테스트 중 입니다.</p>
+      <button type="button">닫기</button>
+    </div>
+  </div>
+
+  <!-- 모달 처리 -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>
