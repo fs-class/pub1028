@@ -250,10 +250,32 @@ header {
 	margin-left: 16px;
 }
 
-/* 배너 & 바로가기 */
+/* 비디오 & 바로가기 */
 .contents img, .contents video {
 	height: 100%;
 	object-fit: cover;
+}
+
+/* 비디오 버튼 */
+.vid {
+	position: relative;
+}
+.vid button {
+	display: none;
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	background: rgba(0, 0, 0, 0.5);
+	padding: 10px 16px;
+	border: none;
+	border-radius: 10px;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+}
+.vid:hover button {
+	display: block;
 }
 
 /* 푸터 */
